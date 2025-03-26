@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/portfolio/browser",
+    "public": "dist/portfolio",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -19,7 +19,7 @@
     "rewrites": [
       {
         "source": "**",
-        "destination": "/index.html"
+        "destination": "/browser/index.html"
       }
     ]
   }
