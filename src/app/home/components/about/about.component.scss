@@ -1,0 +1,36 @@
+.summary_text{
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #565c61;
+    text-align: start;
+    font-family: "poppins", sans-serif;
+}
+.feature_text{
+   background: linear-gradient(to right, #830845, #feb47b);
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.feature_name{
+   color: lightseagreen;
+}
+@media screen and (max-width: 600px){
+    .summary_text{
+        font-size: 1rem;
+        text-align: start;
+    }
+    // .feature_text{
+    //     font-size: 1.2rem;
+    // }
+    // .feature_name{
+    //     font-size: 1.2rem;
+    // }
+
+}
+.content_image{
+    width: 500px;
+    height: 400px;
+    border-radius: 10% 10%;
+
+}

@@ -1,0 +1,40 @@
+<nav id="navbar" class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark ">
+  <div class="container-fluid p-2">
+    <a class="navbar-brand poppins-bold" href="#">POOVARASAN</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center ui_wrap" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollToSection('home'); closeNavbar()">Home</a>
+        </li>
+        <li class="nav-item ms-md-3">
+          <a class="nav-link" (click)="scrollToSection('about'); closeNavbar()">About</a>
+        </li>
+        <li class="nav-item ms-md-3">
+          <a class="nav-link" (click)="scrollToSection('skills'); closeNavbar()">Skills</a>
+        </li>
+        <li class="nav-item ms-md-3">
+          <a class="nav-link" (click)="scrollToSection('experience'); closeNavbar()">Experience</a>
+        </li>
+        <!-- <li class="nav-item ms-md-3">
+          <a class="nav-link" (click)="scrollToSection('projects'); closeNavbar()">Projects</a>
+        </li> -->
+        <li class="nav-item ms-md-3">
+          <a class="nav-link" (click)="scrollToSection('contact'); closeNavbar()">Contact</a>
+        </li>
+
+        <li class="nav-item d-lg-none">
+          <button class="btn btn-warning w-100 mt-2 poppins-light" (click)="downloadPdf()">Download CV</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="ms-auto d-none d-lg-block poppins-light">
+      <button class="btn btn-warning" (click)="downloadPdf()">Download CV</button>
+    </div>
+  </div>
+</nav>

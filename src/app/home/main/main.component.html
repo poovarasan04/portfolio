@@ -1,0 +1,35 @@
+<div class="z-index-3 headder_content">
+  <app-navbar></app-navbar>
+</div>
+<main class="content wrapper">
+  <section id="home" class="section_container d-flex align-items-center justify-content-center">
+    <app-home></app-home>
+  </section>
+
+  <section  id="about" class="section_container d-flex align-items-center justify-content-center">
+    <app-about></app-about>
+  </section>
+
+  <section id="skills" class="section_container d-flex align-items-center justify-content-center">
+    <div class="icons d-flex justify-content-center align-items-center flex-row flex-wrap w-100 gap-3 p-2">
+      <ng-container *ngFor="let skill of skills">
+        <div class="icon">
+          <i [ngClass]="skill.icon" [ngStyle]="{ color: skill.color }"></i>
+          <span class="poppins-light">{{skill.title}}</span>
+        </div>
+      </ng-container>
+    </div>
+  </section>
+
+  <section id="experience" class="section_container d-flex align-items-center justify-content-center">
+    <app-experience></app-experience>
+  </section>
+
+  <!-- <section id="projects" class="section_container d-flex align-items-center justify-content-center">
+    <app-projects></app-projects>
+  </section> -->
+
+  <section id="contact" class="section_container">
+    <app-contact></app-contact>
+  </section>
+</main>

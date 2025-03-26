@@ -1,0 +1,23 @@
+<article class="container">
+  <header class="mb-4">
+    <h1 class="display-4 feature_name poppins-light">{{name}}</h1>
+    <h5 class="display-6 feature_text poppins-light">{{designation}}</h5>
+  </header>
+  <section class="m-0 p-0 animated-box d-flex flex-fill">
+    <div>
+      <h3>Education</h3>
+      <ul class="w-100 ps-0 ms-0">
+        <li *ngFor="let edu of education" class="poppins-regular d-flex flex-column ">
+          <strong>{{ edu.degree }}</strong>
+          <small> {{ edu.university }}, {{ edu.year }}</small>
+        </li>
+      </ul>
+      <p class="lead summary_text poppins-regular" *ngFor="let summary of summary">
+        {{summary}}
+      </p>
+    </div>
+    <div class="d-lg-flex d-none flex-fill justify-content-center">
+      <img src="assets/images/user_img.png" alt="user" class="img-fluid content_image" />
+    </div>
+  </section>
+</article>
