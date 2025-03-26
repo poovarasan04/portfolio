@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/portfolio",
+    "public": "dist/portfolio/browser",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -8,8 +8,8 @@
     ],
     "rewrites": [
       {
-        "source": "**",
-        "destination": "/browser/index.html"
+        "source": "!/@(assets|favicon.ico|*.js|*.css|*.map)/**",
+        "destination": "/index.html"
       }
     ]
   }
